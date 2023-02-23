@@ -97,4 +97,4 @@ EmulatorManager.getInstance().unPressKey(player, key)
 **调用方式：EmulatorManager.Settings.SHOW_CONTROLLER**
 ***
 ## 6.Thanks
-**此框架基于[NostalgiaLite](https://github.com/huzongyao/NostalgiaLite)进行二次封装开发，编译c++、so库（arm64-v8a、armeabi-v7a、x86），提供SDK能力，封装相关操作API，快速引入开发**
+**此框架基于[NostalgiaLite](https://github.com/huzongyao/NostalgiaLite)进行二次封装开发，感谢作者[huzongyao](https://github.com/huzongyao)提供的基于AS NDK的可编译Jni/C++代码；NesEmulator库提供已完整编译so库（arm64-v8a、armeabi-v7a、x86），按需使用，提供SDK能力，封装相关操作API，快速引入开发！**
