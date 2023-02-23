@@ -1,6 +1,6 @@
 # Nes Emulator（Nes模拟器）
 
-![ScreenShot](https://github.com/Beseting/NesEmulator/screen_shot/blob/screen_shot.png)
+![ScreenShot](https://github.com/Beseting/NesEmulator/blob/master/screen_shot/screen_shot.png)
 
 ## 1.引入
 `implementation 'io.github.beseting:NesEmulator:1.0.1'`
