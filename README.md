@@ -88,10 +88,10 @@ EmulatorManager.getInstance().unPressKey(player, key)
 ***
 ### 5.3 设置属性
 |Settings（设置）|取值类型|默认值|描述|
-|:-|:-|:-|:----|
+|:-|:-|:-|:-|
 |SHOW_CONTROLLER|Boolean|true|是否显示默认控制器|
-|EMULATION_QUALITY|EmulationQuality(LOW/MEDIUM/HIGH)|EmulationQuality.MEDIUM|模拟器画质|
-|SCREEN_ORIENTATION|EmulatorScreenOrientation(AUTO/VERTICAL/HORIZONTAL)|EmulatorScreenOrientation.AUTO|模拟器屏幕方向|
+|EMULATION_QUALITY|EmulationQuality|MEDIUM|模拟器画质|
+|SCREEN_ORIENTATION|EmulatorScreenOrientation|AUTO|模拟器屏幕方向|
 |FORCE_FULL_SCREEN|Boolean|false|是否强制全屏|
 
 **调用方式：EmulatorManager.Settings.SHOW_CONTROLLER**
