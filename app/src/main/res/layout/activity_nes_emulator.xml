@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- PLayer1 -->
+    <TextView
+        android:id="@+id/keyLeft"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="90dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="#22000000"
+        android:gravity="center"
+        android:text="1P"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft"
+        app:layout_constraintTop_toTopOf="@+id/keyLeft" />
+
+    <TextView
+        android:id="@+id/keyLeftUp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↖"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyLeft"
+        app:layout_constraintStart_toStartOf="@id/keyLeft" />
+
+    <TextView
+        android:id="@+id/keyUp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="↑"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyLeft"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft" />
+
+    <TextView
+        android:id="@+id/keyRightUp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↗"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyUp"
+        app:layout_constraintTop_toTopOf="@+id/keyUp" />
+
+    <TextView
+        android:id="@+id/keyRight"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="→"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyUp"
+        app:layout_constraintTop_toBottomOf="@+id/keyUp" />
+
+    <TextView
+        android:id="@+id/keyRightDown"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↘"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/keyRight"
+        app:layout_constraintTop_toBottomOf="@+id/keyRight" />
+
+    <TextView
+        android:id="@+id/keyDown"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="↓"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft"
+        app:layout_constraintTop_toBottomOf="@+id/keyLeft" />
+
+    <TextView
+        android:id="@+id/keyLeftDown"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↙"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/keyDown"
+        app:layout_constraintEnd_toStartOf="@+id/keyDown" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/keySelect"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#90FF0000"
+            android:gravity="center"
+            android:text="SELECT"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/keyStart"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#90FF0000"
+            android:gravity="center"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/keyATurbo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="90dp"
+        android:background="#AAFF0000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/keyBTurbo"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#AAFF0000"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyATurbo"
+        app:layout_constraintEnd_toStartOf="@+id/keyATurbo" />
+
+    <TextView
+        android:id="@+id/keyB"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/keyBTurbo"
+        app:layout_constraintTop_toBottomOf="@+id/keyBTurbo" />
+
+    <TextView
+        android:id="@+id/keyA"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/keyATurbo"
+        app:layout_constraintTop_toBottomOf="@+id/keyATurbo" />
+
+
+    <!-- Player2 -->
+    <TextView
+        android:id="@+id/keyLeft2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="90dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="←"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="#22000000"
+        android:gravity="center"
+        android:text="2P"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft2"
+        app:layout_constraintTop_toTopOf="@+id/keyLeft2" />
+
+    <TextView
+        android:id="@+id/keyLeftUp2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↖"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyLeft2"
+        app:layout_constraintStart_toStartOf="@id/keyLeft2" />
+
+    <TextView
+        android:id="@+id/keyUp2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="↑"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyLeft2"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft2" />
+
+    <TextView
+        android:id="@+id/keyRightUp2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↗"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyUp2"
+        app:layout_constraintTop_toTopOf="@+id/keyUp2" />
+
+    <TextView
+        android:id="@+id/keyRight2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="→"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyUp2"
+        app:layout_constraintTop_toBottomOf="@+id/keyUp2" />
+
+    <TextView
+        android:id="@+id/keyRightDown2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↘"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/keyRight2"
+        app:layout_constraintTop_toBottomOf="@+id/keyRight2" />
+
+    <TextView
+        android:id="@+id/keyDown2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="↓"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/keyLeft2"
+        app:layout_constraintTop_toBottomOf="@+id/keyLeft2" />
+
+    <TextView
+        android:id="@+id/keyLeftDown2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:background="#33FF0000"
+        android:gravity="center"
+        android:text="↙"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/keyDown2"
+        app:layout_constraintEnd_toStartOf="@+id/keyDown2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/keySelect2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:background="#90FF0000"
+            android:gravity="center"
+            android:text="SELECT"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/keyStart2"
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:background="#90FF0000"
+            android:gravity="center"
+            android:text="START"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/keyATurbo2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="90dp"
+        android:layout_marginEnd="20dp"
+        android:background="#AAFF0000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/keyBTurbo2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#AAFF0000"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/keyATurbo2"
+        app:layout_constraintEnd_toStartOf="@+id/keyATurbo2" />
+
+    <TextView
+        android:id="@+id/keyB2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="B"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/keyBTurbo2"
+        app:layout_constraintTop_toBottomOf="@+id/keyBTurbo2" />
+
+    <TextView
+        android:id="@+id/keyA2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#80FF0000"
+        android:gravity="center"
+        android:text="A"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/keyATurbo2"
+        app:layout_constraintTop_toBottomOf="@+id/keyATurbo2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
