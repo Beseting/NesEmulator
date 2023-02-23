@@ -1,4 +1,4 @@
-# Nes Emulator（Nes模拟器）
+# Nes Emulator（Nes模拟器/FC任天堂/小霸王游戏）
 
 ![ScreenShot](https://github.com/Beseting/NesEmulator/blob/master/screen_shot/screen_shot.png)
 
