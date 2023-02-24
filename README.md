@@ -2,6 +2,9 @@
 
 ![ScreenShot](https://github.com/Beseting/NesEmulator/blob/master/screen_shot/screen_shot.png)
 
+## :clap:Supporters
+[![Stargazers repo roster for @Beseting/NesEmulator](https://reporoster.com/stars/Beseting/NesEmulator)](https://github.com/Beseting/NesEmulator/stargazers)
+
 ## 1.引入
 `implementation 'io.github.beseting:NesEmulator:1.0.1'`
 
