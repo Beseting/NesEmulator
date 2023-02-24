@@ -5,7 +5,7 @@
 ## :clap: Supporters
 [![Stargazers repo roster for @Beseting/NesEmulator](https://reporoster.com/stars/Beseting/NesEmulator)](https://github.com/Beseting/NesEmulator/stargazers)
 
-**[简体中文](https://github.com/Beseting/NesEmulator/README-CN.md) | English**
+**[简体中文](https://github.com/Beseting/NesEmulator/blob/master/README-CN.md) | English**
 
 ## 1.Getting Started
 `implementation 'io.github.beseting:NesEmulator:1.0.1'`
